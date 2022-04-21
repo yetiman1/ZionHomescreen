@@ -30,4 +30,9 @@ class TopStackView: UIView {
         self.layer.borderColor = UIColor.white.cgColor
         self.clipsToBounds = true
     }
+    private func addConstraints() {
+        let margins = layoutMarginsGuide
+        var constraints = [NSLayoutConstraint]()
+        constraints.append(backgroundImage.topAnchor.constraint(equalTo: margins.topAnchor,constant: <#T##CGFloat#>))
+    }
 }
