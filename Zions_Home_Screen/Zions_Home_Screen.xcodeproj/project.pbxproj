@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B8831E32811CEF90090A8B3 /* LongRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8831E22811CEF90090A8B3 /* LongRectangle.swift */; };
+		0B8831E52811D0FA0090A8B3 /* TopStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8831E42811D0FA0090A8B3 /* TopStackView.swift */; };
 		0B89AC3C281058B900C955E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89AC3B281058B900C955E0 /* AppDelegate.swift */; };
 		0B89AC3E281058B900C955E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89AC3D281058B900C955E0 /* SceneDelegate.swift */; };
 		0B89AC40281058B900C955E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89AC3F281058B900C955E0 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B8831E22811CEF90090A8B3 /* LongRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRectangle.swift; sourceTree = "<group>"; };
+		0B8831E42811D0FA0090A8B3 /* TopStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStackView.swift; sourceTree = "<group>"; };
 		0B89AC38281058B900C955E0 /* Zions_Home_Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zions_Home_Screen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B89AC3B281058B900C955E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B89AC3D281058B900C955E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 				0B89AC3B281058B900C955E0 /* AppDelegate.swift */,
 				0B89AC3D281058B900C955E0 /* SceneDelegate.swift */,
 				0B89AC3F281058B900C955E0 /* ViewController.swift */,
+				0B8831E42811D0FA0090A8B3 /* TopStackView.swift */,
 				0B89AC41281058B900C955E0 /* Main.storyboard */,
+				0B8831E22811CEF90090A8B3 /* LongRectangle.swift */,
 				0B89AC44281058BA00C955E0 /* Assets.xcassets */,
 				0B89AC5128107EF700C955E0 /* home-icon.png */,
 				0B89AC5328107F2600C955E0 /* map-icon.png */,
@@ -157,6 +163,8 @@
 				0B89AC40281058B900C955E0 /* ViewController.swift in Sources */,
 				0B89AC3C281058B900C955E0 /* AppDelegate.swift in Sources */,
 				0B89AC3E281058B900C955E0 /* SceneDelegate.swift in Sources */,
+				0B8831E52811D0FA0090A8B3 /* TopStackView.swift in Sources */,
+				0B8831E32811CEF90090A8B3 /* LongRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
