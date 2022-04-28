@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="28N-L9-5Rv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="28N-L9-5Rv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="bCU-Is-C25">
             <objects>
                 <viewController id="R8H-yS-gOc" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="IrO-FQ-pXk"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vUM-xI-uXN"/>
+                    <tabBarItem key="tabBarItem" title="" image="map-icon" selectedImage="map-icon" id="vUM-xI-uXN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdV-ec-4iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-365" y="433"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="EE5-qg-mVi">
             <objects>
                 <viewController id="ZMb-1r-wPO" sceneMemberID="viewController">
@@ -34,96 +34,140 @@
                         <viewLayoutGuide key="safeArea" id="9gW-HO-9tR"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rz2-3s-6aJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="plan-icons" selectedImage="plan-icons" id="rz2-3s-6aJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihx-GN-3Qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1255" y="883"/>
         </scene>
-        <!--Item 1-->
+        <!--Home Screen View Controller-->
         <scene sceneID="aHy-Zc-bHc">
             <objects>
-                <viewController id="Lt4-NG-n3p" sceneMemberID="viewController">
+                <viewController id="Lt4-NG-n3p" customClass="HomeScreenViewController" customModule="Zions_Home_Screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kq8-vs-vu8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-VR-h3i">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-VR-h3i" customClass="LongRectangle" customModule="Zions_Home_Screen" customModuleProvider="target">
                                 <rect key="frame" x="20" y="44" width="374" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="AzD-yD-m8R">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="AzD-yD-m8R">
                                 <rect key="frame" x="20" y="209" width="374" height="193"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-Ak-eJ2">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-Ak-eJ2" customClass="SquareView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="193" height="193"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZH8-n5-WAf">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZH8-n5-WAf">
                                         <rect key="frame" x="204" y="0.0" width="170" height="193"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-sS-vJG">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-sS-vJG" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="92.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-iJ-uvj">
-                                                <rect key="frame" x="0.0" y="101" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-iJ-uvj" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100.5" width="170" height="92.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZH8-n5-WAf" firstAttribute="leading" secondItem="AzD-yD-m8R" secondAttribute="leading" constant="204" id="BpL-Se-vLr"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ROx-e1-cfp">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ROx-e1-cfp">
                                 <rect key="frame" x="20" y="410" width="374" height="193"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-YC-Nkj">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-YC-Nkj" customClass="SquareView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="193" height="193"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-Ef-g5r">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-Ef-g5r">
                                         <rect key="frame" x="204" y="0.0" width="170" height="193"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNa-xU-8U0">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNa-xU-8U0" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJv-QN-yYS">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJv-QN-yYS" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="101" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JJv-QN-yYS" firstAttribute="top" secondItem="Uzp-Ef-g5r" secondAttribute="top" constant="101" id="9RC-vS-tGt"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uzp-Ef-g5r" firstAttribute="leading" secondItem="ROx-e1-cfp" secondAttribute="leading" constant="204" id="thk-ZR-ptx"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-Px-tXe">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-Px-tXe">
                                 <rect key="frame" x="20" y="611" width="374" height="193"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-MO-4yb">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-MO-4yb" customClass="SquareView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="193" height="193"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="gu4-8K-6K5">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="gu4-8K-6K5">
                                         <rect key="frame" x="204" y="0.0" width="170" height="193"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sia-R3-Enn">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sia-R3-Enn" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-dC-cIC">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-dC-cIC" customClass="smallRecView" customModule="Zions_Home_Screen" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="101" width="170" height="92"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gcm-dC-cIC" firstAttribute="top" secondItem="gu4-8K-6K5" secondAttribute="top" constant="101" id="BAm-yw-VxQ"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gu4-8K-6K5" firstAttribute="leading" secondItem="pAy-Px-tXe" secondAttribute="leading" constant="204" id="pmi-Ui-HPo"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lGr-Vu-Ns5"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="top" secondItem="fwd-VR-h3i" secondAttribute="bottom" constant="8" id="57w-B6-pey"/>
+                            <constraint firstAttribute="bottom" secondItem="AzD-yD-m8R" secondAttribute="bottom" constant="494" id="7cG-QH-poH"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="leading" secondItem="pAy-Px-tXe" secondAttribute="leading" id="Hv8-fo-hNM"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="trailing" secondItem="fwd-VR-h3i" secondAttribute="trailing" id="T2b-wg-haR"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="leading" secondItem="fwd-VR-h3i" secondAttribute="leading" id="UfD-pR-uYo"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="leading" secondItem="ROx-e1-cfp" secondAttribute="leading" id="UlH-rd-7TE"/>
+                            <constraint firstItem="fwd-VR-h3i" firstAttribute="top" secondItem="lGr-Vu-Ns5" secondAttribute="top" id="VoE-HZ-YUR"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="trailing" secondItem="pAy-Px-tXe" secondAttribute="trailing" id="bpJ-Am-EL0"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="top" secondItem="Kq8-vs-vu8" secondAttribute="top" constant="209" id="fQi-Ta-DsV"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="trailing" secondItem="Kq8-vs-vu8" secondAttribute="trailingMargin" id="hDS-dC-55w"/>
+                            <constraint firstItem="ROx-e1-cfp" firstAttribute="top" secondItem="AzD-yD-m8R" secondAttribute="bottom" constant="8" id="nLG-OH-p4q"/>
+                            <constraint firstAttribute="bottom" secondItem="ROx-e1-cfp" secondAttribute="bottom" constant="293" id="qrD-qL-oEZ"/>
+                            <constraint firstItem="lGr-Vu-Ns5" firstAttribute="bottom" secondItem="pAy-Px-tXe" secondAttribute="bottom" constant="9" id="t9E-jy-laQ"/>
+                            <constraint firstItem="pAy-Px-tXe" firstAttribute="top" secondItem="ROx-e1-cfp" secondAttribute="bottom" constant="8" id="uRy-c0-aKk"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="trailing" secondItem="ROx-e1-cfp" secondAttribute="trailing" id="vwk-d3-EKf"/>
+                            <constraint firstItem="AzD-yD-m8R" firstAttribute="leading" secondItem="Kq8-vs-vu8" secondAttribute="leadingMargin" id="ztW-hU-ISK"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="oiW-uU-IHr"/>
+                    <tabBarItem key="tabBarItem" title="" image="home-icon" selectedImage="home-icon" id="oiW-uU-IHr"/>
+                    <connections>
+                        <outlet property="camping" destination="sia-R3-Enn" id="yWn-I5-ANu"/>
+                        <outlet property="entrances" destination="MBd-iJ-uvj" id="oH1-EC-Wo3"/>
+                        <outlet property="greaterZionRegion" destination="fwd-VR-h3i" id="7eq-yi-zLJ"/>
+                        <outlet property="parking" destination="jcu-sS-vJG" id="0EC-Ac-g01"/>
+                        <outlet property="regionUpdates" destination="tNa-MO-4yb" id="shH-ip-d8X"/>
+                        <outlet property="shuttle" destination="JJv-QN-yYS" id="7Zk-dY-Po3"/>
+                        <outlet property="trails" destination="sNa-xU-8U0" id="ehx-Dz-8zq"/>
+                        <outlet property="weather" destination="gcm-dC-cIC" id="TJg-nx-Suy"/>
+                        <outlet property="whatToDo" destination="gdw-YC-Nkj" id="lBM-Ve-sDx"/>
+                        <outlet property="whatToSee" destination="oUf-Ak-eJ2" id="nB9-Kk-93j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7N-q6-SXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,17 +193,17 @@
             </objects>
             <point key="canvasLocation" x="-1254" y="42"/>
         </scene>
-        <!--Item-->
+        <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zions_Home_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="Zions_Home_Screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="31B-j9-LNO"/>
+                    <tabBarItem key="tabBarItem" title="" image="settings-icon" selectedImage="settings-icon" id="31B-j9-LNO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,8 +211,9 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="home-icon" width="50" height="50"/>
+        <image name="map-icon" width="50" height="50"/>
+        <image name="plan-icons" width="67" height="67"/>
+        <image name="settings-icon" width="50" height="50"/>
     </resources>
 </document>
